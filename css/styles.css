@@ -173,12 +173,20 @@ background: var(--NAVY-BLUE, #2E2F42);
 background-image: linear-gradient(
 rgba(46, 47, 66, 0.70),
 rgba(46, 47, 66, 0.70)), 
-url(../images/fon-hero.jpg);
+url(../images/Dark-bg-mob.jpg);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
+rgba(rgba(46, 47, 66, 0.70)),
+url(../images/Dark-bg-x2.jpg);
+    }
+}
 .hero-container {
 display: flex;
 flex-direction: column;
@@ -899,6 +907,18 @@ max-width: 768px;
 
 .hero {
 padding: 112px 0;
+background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+rgba(46, 47, 66, 0.70)),
+url(../images/Dark-bg-tab.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
+rgba(rgba(46, 47, 66, 0.70)),
+url(../images/Dark-bg-tab-x2.jpg);
+    }
 }
 
 .hero-title {
@@ -979,7 +999,21 @@ padding-right: 15px;
 .hero {
 padding: 188px 0;
 max-width: 1440px;
+background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+rgba(46, 47, 66, 0.70)),
+url(../images/fon-hero.jpg);
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
+rgba(rgba(46, 47, 66, 0.70)),
+url(../images/Dark-bg-tab-x2.jpg);
+}
+}
+
 
 .hero-title {
 
