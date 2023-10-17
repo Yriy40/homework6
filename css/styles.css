@@ -58,28 +58,34 @@ height: auto;
 border-bottom: 1px solid #e7e9fc;
 background: var(--WHITE, #FFF);
 box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .header-container {
 display: flex;
 align-items: center;
-    
+/* width: 320px; */
+max-width: 100%;
+height: 56px;
+flex-shrink: 0;
     
 }
 .header-navigation {
     display: flex;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     align-items: center;
 }
 .header-logo {
     color: var(--IRIS, #4D5AE5);
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway";
+    /* sans-serif */
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
+    /* margin-right: 76px; */
+    margin-left: auto;
     display: flex;
 }
 
@@ -88,7 +94,8 @@ align-items: center;
 }
 
 .header-menu {
-display: flex;
+/* display: flex; */
+display: none;
 align-items: center;
 gap: 40px;
 }
@@ -131,17 +138,19 @@ background:#404BBF;
 .current:hover::after,
 .current:focus::after,
 .current:active:after {
-    display: flex;}
+    display: flex;
+}
 /*========================================*/
 /*=================address================*/
 .contacts {
 font-style: normal
 }
 .contacts-list {
-    display: flex;
-    gap: 40px;
-    justify-content: flex-end;
-    align-items: center;
+    /* display: flex; */
+display: none;
+gap: 40px;
+justify-content: flex-end;
+align-items: center;
 }
 .contacts-link {
 color: var(--SLATE, #434455);
@@ -161,6 +170,48 @@ color: var(--OCEAN, #404BBF);
 .contacts-link:focus {
 color: var(--OCEAN, #404BBF);
 }
+
+.menu-mob-btn-open {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7E9FC;
+    border: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    /* cursor: pointer; */
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+        /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+*/
+}
+
+.menu-mob-btn-open .modal-btn-open-icon {
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.menu-mob-btn-open:hover,
+.menu-mob-btn-open:focus {
+
+    background-color: var(--OCEAN, #404BBF);
+    border: none;
+}
+
+.menu-mob-btn-open:hover .modal-btn-icon,
+.menu-mob-btn-open:focus .modal-btn-icon {
+    fill: #ffffff;
+}
+
+
+
+
+
 /*========================================*/
 /*=================hero================*/
 .hero {
@@ -182,8 +233,9 @@ background-size: cover;
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .hero {
-background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
-rgba(rgba(46, 47, 66, 0.70)),
+background-image: linear-gradient(
+rgba(46, 47, 66, 0.70),
+rgba(46, 47, 66, 0.70)),
 url(../images/Dark-bg-x2.jpg);
     }
 }
@@ -267,11 +319,12 @@ flex-wrap: wrap;
 }
 .subtitle {
     color: var(--NAVY-BLUE, #2E2F42);
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        margin-bottom: 8px;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 /*color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
@@ -915,8 +968,9 @@ url(../images/Dark-bg-tab.jpg);
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .hero {
-background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
-rgba(rgba(46, 47, 66, 0.70)),
+background-image: linear-gradient(
+rgba(46, 47, 66, 0.70),
+rgba(46, 47, 66, 0.70)),
 url(../images/Dark-bg-tab-x2.jpg);
     }
 }
@@ -936,9 +990,15 @@ gap: 72px 24px;
 flex-direction: row;
 flex-wrap: wrap;
 }
+
 .plan-item {
 width: calc((100% - 24px) / 2);
 }
+
+.subtitle {
+text-align: left;
+}
+
 .our-team-list {
 gap: 64px 24px;
 flex-direction: row;
@@ -999,7 +1059,8 @@ padding-right: 15px;
 .hero {
 padding: 188px 0;
 max-width: 1440px;
-background-image: linear-gradient(rgba(46, 47, 66, 0.70),
+background-image: linear-gradient(
+rgba(46, 47, 66, 0.70),
 rgba(46, 47, 66, 0.70)),
 url(../images/fon-hero.jpg);
 }
@@ -1008,9 +1069,10 @@ url(../images/fon-hero.jpg);
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .hero {
-background-image: linear-gradient(rgba(46, 47, 66, 0.70)),
-rgba(rgba(46, 47, 66, 0.70)),
-url(../images/Dark-bg-tab-x2.jpg);
+background-image: linear-gradient(
+rgba(46, 47, 66, 0.70),
+rgba(46, 47, 66, 0.70)),
+url(../images/people-x2.jpg);
 }
 }
 
