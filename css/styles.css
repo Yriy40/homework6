@@ -85,7 +85,7 @@ flex-shrink: 0;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     /* margin-right: 76px; */
-    margin-left: auto;
+margin-left: auto; 
     display: flex;
 }
 
@@ -207,33 +207,28 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 .menu-mob-btn-open:focus .modal-btn-icon {
     fill: #ffffff;
 }
-
-.mob-menu {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ffffff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* overflow: auto; */
-    /* opacity: 0; */
-    /* visibility: hidden; */
-    pointer-events: auto;
-    /* width: 320px;
-    width: 100vw;
-    height: 640px;
-    background-color: #FFF;
-    /* position: fixed; */
-    /* z-index: 1;
-    top: 0px;
-    left: 0px;
-    padding-left: 16px;
-    padding-bottom: 40px; */
+.mobil-menu.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+.mobil-menu {
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: #ffffff;
+padding-left: 16px;
+padding-bottom: 40px;
+display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
+overflow: auto; 
+opacity: 0;
+visibility: hidden;
+pointer-events: auto;
     }
 
 .menu-mob-btn-close {
@@ -243,12 +238,15 @@ align-items: center;
 justify-content: center;
 background-color: #E7E9FC;
 border: none;
-/* border: 1px solid rgba(0, 0, 0, 0.1); *//* cursor: pointer; */
+border-radius: 50%;
+/* border: 1px solid rgba(0, 0, 0, 0.1); */
+/* cursor: pointer; */
 top: 24px;
-right: 16px;
+right: 24px;
 width: 24px;
 height: 24px;
 padding: 0;
+/* margin-bottom: 24px; */
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 /*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
@@ -257,34 +255,96 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
 .modal-btn-icon {}
 
-.list {}
+.list {
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 40px;
+margin-top: 72px;
+margin-bottom: 168px;
+}
 
-.mob-menu-item {}
+.mob-menu-item {
 
-.mob-menu-link {}
+}
+
+.mob-menu-link {
+color: var(--NAVY-BLUE, #2E2F42);
+font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+}
+
+.mob-menu-link:hover,
+.mob-menu-link:focus,
+.mob-menu-link:active {
+    color: #404BBF;
+}
 
 .current {}
 
 .mobi-contacts-list {
-color: var(--IRIS, #4D5AE5);
-font-family: Roboto;
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+margin-bottom: 48px;
+}
+
+.mobi-contacts-item {
+
+}
+
+.mobi-contacts-link {
+color: var(--SLATE, #434455);
 font-size: 20px;
+font-style: normal;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
 
-.mobi-contacts-item {}
+.mobi-contacts-link:hover,
+.mobi-contacts-link:focus,
+.mobi-contacts-link:active {
+color: #404BBF;
+}
+.mob-soc-list {
+/* display: inline-flex; */
+display: flex;
+align-items: flex-start;
+gap: 40px;
+margin-top: auto;
+}
 
-.mobi-contacts-link {}
+.mob-soc-item {
+width: 40px;
+height: 40px;
+}
 
-.mob-soc-list {}
+.mob-soc-link {
+width: 100%;
+height: 100%;
+background-color: #4D5AE5;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc-link:hover,
+.mob-soc-link:focus,
+.mob-soc-link:active {
+background-color: #31D0AA;
 
-.mob-soc-item {}
-
-.mob-soc-link {}
-
-.mob-soc-icon {}
+}
+.mob-soc-icon {
+fill: #f4f4fd;
+}
 
 
 
@@ -703,7 +763,7 @@ background-color:#31D0AA ;
 
 }
 .footer-team-icon {
-    fill: #f4f4fd;
+fill: #f4f4fd;
 }
 
 
@@ -1032,6 +1092,35 @@ fill: transparent;
 
 .container {
 max-width: 768px;
+}
+.header-navigation {
+flex-grow: 1;
+}
+
+.contacts-list {
+display: flex;
+}
+.mobil-menu {
+display: none;
+}
+
+.list {
+display: none;
+}
+
+.mobi-contacts-list{
+display: none;
+}
+
+.menu-mob-btn-open {
+display: none;
+}
+.header-logo {
+margin: 0 120px 0 0;
+}
+
+.header-menu {
+display: flex;
 }
 
 .hero {
