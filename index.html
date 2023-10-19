@@ -172,7 +172,16 @@ We bring forth a deep passion for problem-solving.
     <h2 class="our-team-title">Our Team</h2>
     <ul class="our-team-list">
         <li class="our-team-item">
-            <img src="./images/img1.jpg" alt="Mark Guerrero" width="264" height="260" class="our-team-img">
+        <img
+            srcset="
+            ./images/img1.jpg 1x,
+            ./images/img 1-2.jpg 2x"
+                src="./images/img1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+                class="our-team-img"
+        /> 
             <div class="best-team">
                 <h3 class="our-team-subtitle">Mark Guerrero</h3>
                 <p class="our-team-text">Product Designer</p>
@@ -213,7 +222,16 @@ We bring forth a deep passion for problem-solving.
             </div>
         </li>
         <li class="our-team-item">
-            <img src="./images/img2.jpg" alt="Tom Ford" width="264" height="260" class="our-team-img">
+        <img
+            srcset="
+            ./images/img2.jpg 1x,
+            ./images/img 2-2.jpg 2x"
+                src="./images/img2.jpg"
+                alt="Tom Ford"
+                width="264"
+                height="260"
+                class="our-team-img"
+        /> 
             <div class="best-team">
                 <h3 class="our-team-subtitle">Tom Ford</h3>
                 <p class="our-team-text">Frontend Developer></p>
@@ -254,7 +272,16 @@ We bring forth a deep passion for problem-solving.
             </div>
         </li>
         <li class="our-team-item">
-            <img src="./images/img3.jpg" alt="Camila Garcia" width="264" height="260" class="our-team-img">
+        <img
+            srcset="
+            ./images/img3.jpg 1x,
+            ./images/img 3-2.jpg 2x"
+                src="./images/img3.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+                class="our-team-img"
+        />
             <div class="best-team">
                 <h3 class="our-team-subtitle">Camila Garcia</h3>
                 <p class="our-team-text">Marketing</p>
@@ -295,7 +322,16 @@ We bring forth a deep passion for problem-solving.
             </div>
         </li>
         <li class="our-team-item">
-            <img src="./images/img4.jpg" alt="Daniel Wilson" width="264" height="260" class="our-team-img">
+            <img
+            srcset="
+            ./images/img4.jpg 1x,
+            ./images/img 4-2.jpg 2x"
+                src="./images/img4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+                class="our-team-img"
+        />
             <div class="best-team">
                 <h3 class="our-team-subtitle">Daniel Wilson</h3>
                 <p class="our-team-text">UI Designer</p>
@@ -344,11 +380,22 @@ We bring forth a deep passion for problem-solving.
     <ul class="our-portfolio-list">
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
-                <img src="./images/img11.jpg"
+                <picture>
+                    <source
+                    srcset="./images/img11.jpg 1x, ./images/img-pc-1.jpg 2x"
+                    media="(min-width: 1166px)"/>
+                    <source
+                    srcset="./images/img-tab-1-1.jpg 1x, ./images/img-tab-1-2.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source
+                    srcset="./images/img-mob-1-1.jpg 1x, ./images/img-mob-1-2.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <img src="./images/img11.jpg"
                 alt="Banking App"
                 width="360"
                 height="300"
                 class="our-portfolio-img">
+                </picture>
                 <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
@@ -358,11 +405,22 @@ We bring forth a deep passion for problem-solving.
         </li>
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
-            <img src="./images/img12.jpg"
-            alt="Cashless Payment"
-            width="360"
-            height="300"
-            class="our-portfolio-img">
+        <picture>
+                    <source
+                    srcset="./images/img12.jpg 1x, ./images/img-pc-2.jpg 2x"
+                    media="(min-width: 1166px)"/>
+                    <source
+                    srcset="./images/img-tab-2-1.jpg 1x, ./images/img-tab-2-2.jpg 2x"
+                    media="(min-width: 768px)"/>
+                    <source
+                    srcset="./images/img-mob-2-1.jpg 1x, ./images/img-mob-2-2.jpg 2x"
+                    media="(max-width: 767px)"/>
+                    <img src="./images/img12.jpg"
+                alt="Cashless Payment"
+                width="360"
+                height="300"
+                class="our-portfolio-img">
+                </picture>
             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
@@ -372,11 +430,22 @@ We bring forth a deep passion for problem-solving.
         </li>
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
-            <img src="./images/img13.jpg"
-            alt="Meditation App"
-            width="360"
-            height="300"
-            class="our-portfolio-img">
+        <picture>
+            <source
+                srcset="./images/img13.jpg 1x, ./images/img-pc-3.jpg 2x"
+                media="(min-width: 1166px)"/>
+                <source
+                srcset="./images/img-tab-3-1.jpg 1x, ./images/img-tab-3-2.jpg 2x"
+                media="(min-width: 768px)"/>
+                <source
+                srcset="./images/img-mob-3-1.jpg 1x, ./images/img-mob-3-2.jpg 2x"
+                media="(max-width: 767px)"/>
+                <img src="./images/img13.jpg"
+                alt="Meditation App"
+                width="360"
+                height="300"
+                class="our-portfolio-img">
+                </picture>
             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
@@ -386,11 +455,22 @@ We bring forth a deep passion for problem-solving.
         </li>
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
+        <picture>
+            <source
+            srcset="./images/img14.jpg 1x, ./images/img-pc-4.jpg 2x"
+            media="(min-width: 1166px)"/>
+            <source
+            srcset="./images/img-tab-4-1.jpg 1x, ./images/img-tab-4-2.jpg 2x"
+            media="(min-width: 768px)"/>
+            <source
+            srcset="./images/img-mob-4-1.jpg 1x, ./images/img-mob-4-2.jpg 2x"
+            media="(max-width: 767px)"/>
             <img src="./images/img14.jpg"
             alt="Taxi Service"
             width="360"
             height="300"
             class="our-portfolio-img">
+            </picture>
             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
@@ -400,11 +480,22 @@ We bring forth a deep passion for problem-solving.
         </li>
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
+        <picture>
+            <source
+            srcset="./images/img15.jpg 1x, ./images/img-pc-5.jpg 2x"
+            media="(min-width: 1166px)"/>
+            <source
+            srcset="./images/img-tab-5-1.jpg 1x, ./images/img-tab-5-2.jpg 2x"
+            media="(min-width: 768px)"/>
+            <source
+            srcset="./images/img-mob-5-1.jpg 1x, ./images/img-mob-5-2.jpg 2x"
+            media="(max-width: 767px)"/>
             <img src="./images/img15.jpg"
             alt="Screen Illustrations"
             width="360"
             height="300"
             class="our-portfolio-img">
+            </picture>
             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
@@ -414,11 +505,22 @@ We bring forth a deep passion for problem-solving.
         </li>
         <li class="our-portfolio-item">
             <div class="our-portfolio-text-wrap">
+        <picture>
+            <source
+            srcset="./images/img16.jpg 1x, ./images/img-pc-6.jpg 2x"
+            media="(min-width: 1166px)" />
+            <source
+            srcset="./images/img-tab-6-1.jpg 1x, ./images/img-tab-6-2.jpg 2x"
+            media="(min-width: 768px)" />
+            <source
+            srcset="./images/img-mob-6-1.jpg 1x, ./images/img-mob-6-2.jpg 2x"
+            media="(max-width: 767px)" />
             <img src="./images/img16.jpg"
             alt="Online Courses"
             width="360"
             height="300"
             class="our-portfolio-img">
+            </picture>
             <p class="portfolio-cover-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
             <div class="best-portfolio">
