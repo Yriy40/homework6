@@ -178,7 +178,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
 .contacts-link:hover {
 color: var(--OCEAN, #404BBF);
 }
@@ -322,6 +321,7 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
+
 
 .mobi-contacts-link:hover,
 .mobi-contacts-link:focus,
@@ -492,8 +492,12 @@ letter-spacing: 0.02em;
 /*=====================================*/
 /*=================team================*/
 .our-team {
-padding: 96px 28px;
-background: var(--CLOUD, #F4F4FD);width: 100%;}
+padding-top: 96px;
+padding-bottom: 96px;
+background: var(--CLOUD, #F4F4FD);
+width: 100%;
+}
+
 .our-team-container {
 
 }
@@ -513,6 +517,7 @@ text-transform: capitalize;
 margin: 0 auto;
 margin-bottom: 72px;
 }
+
 .our-team-list {
 display: flex;
 align-items: center;
@@ -679,29 +684,37 @@ transform: translateY(0);
 background: var(--NAVY-BLUE, #2E2F42);
 padding-top: 96px;
 padding-bottom: 96px;
+width: 100%;
 }
 
 .footer-container {
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: baseline;
-    max-width: 100%;
+margin: 0 auto;
+display: flex;
+flex-wrap: wrap;
+align-items: baseline;
+gap: 72px;
+}
 
+.logo-foot {
+display: inline-flex;
+align-items: center;
+flex-wrap: wrap;
+margin-left: 0;
+    /* margin-bottom: 72px; */
 }
 
 .footer-logo {
 color: var(--IRIS, #4D5AE5);
 display: inline-block;
+/* justify-content: center; */
 font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-margin-bottom: 17.5px;
-margin-left: 86px;
+margin: 0 auto 17.5px;
+
 }
 
 .footer-logo-studio {
@@ -715,10 +728,6 @@ letter-spacing: 0.02em;
 max-width: 264px;
 }
 
-.logo-foot {
-display: block;
-padding-bottom: 72px;
-}
 
 .media-soc-container {
 /* flex-basis: 100%; */
