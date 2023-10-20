@@ -688,25 +688,22 @@ width: 100%;
 }
 
 .footer-container {
-margin: 0 auto;
+/* margin: 0 auto; */
 display: flex;
 flex-wrap: wrap;
-align-items: baseline;
+/* align-items: baseline; */
+justify-content: center;
 gap: 72px;
 }
 
 .logo-foot {
-display: inline-flex;
-align-items: center;
-flex-wrap: wrap;
-margin-left: 0;
-    /* margin-bottom: 72px; */
+text-align: center;
 }
 
 .footer-logo {
 color: var(--IRIS, #4D5AE5);
 display: inline-block;
-/* justify-content: center; */
+justify-content: center;
 font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 18px;
@@ -714,7 +711,6 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin: 0 auto 17.5px;
-
 }
 
 .footer-logo-studio {
@@ -722,6 +718,7 @@ margin: 0 auto 17.5px;
 }
 .footer-text {
 color: var(--CLOUD, #F4F4FD);
+text-align: left;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -732,9 +729,9 @@ max-width: 264px;
 .media-soc-container {
 /* flex-basis: 100%; */
 display: block;
-padding-bottom: 72px;
-padding-left: 40px;
-padding-right: 40px;
+/* padding-bottom: 72px; */
+/* padding-left: 40px;
+padding-right: 40px; */
 }
 
 .subtitle-soc-footer {
@@ -813,7 +810,7 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 font-size: 12px;
 line-height: 1.5;
 letter-spacing: 0.04em;
-padding: 16px;
+padding-left: 16px;
 background-color: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1199,17 +1196,23 @@ width: calc((100% - 24px) / 2);
 flex-direction: row;
 gap: 72px 24px;
 }
+
 .our-portfolio-item {
 width: calc((100% - 24px) / 2);
 }
 
+.container.footer-container{
+    max-width: 584px;
+}
+
 .footer-container{
-padding-left: 108px;
 justify-content: flex-start;
+gap: 72px 24px;
 }
 
 .logo-foot {
-padding-right: 24px;
+text-align: left;
+
 }
 
 .footer-logo{
@@ -1244,7 +1247,9 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-.header-container {margin: 0 auto;/* flex-shrink: 1; */}
+.header-container {
+margin: 0 auto;
+/* flex-shrink: 1; */}
 
 .header-logo {
 margin-right: 76px;
@@ -1349,11 +1354,13 @@ width: calc((100% - 24px * 2) / 3);
 padding-top: 100px;
 padding-bottom: 100px;
 }
-
+.container.footer-container {
+    max-width: 1158px;
+}
 .footer-container {
     justify-content: center;
-    margin: o auto;
     flex-wrap: nowrap;
+    gap: 0;
 }
 
 .footer-logo {
