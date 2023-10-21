@@ -96,13 +96,19 @@ color: var(--NAVY-BLUE, #2E2F42);
 .header-menu {
 /* display: flex; */
 display: none;
-align-items: center;
+/* display: inline-flex; */
+
+align-items: flex-start;
+/* align-items: flex-end; */
 gap: 40px;
 padding-top: 24px;
 }
 
 .header-menu-item {
-display: flex; 
+display: flex;
+/* align-items: flex-start; */
+height: 48px;
+align-items: flex-end;
 }
 
 .header-menu-link {
