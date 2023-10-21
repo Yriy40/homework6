@@ -98,9 +98,9 @@ color: var(--NAVY-BLUE, #2E2F42);
 display: none;
 align-items: center;
 gap: 40px;
-margin-top: 24px;
-
+padding-top: 24px;
 }
+
 .header-menu-item {
 display: flex; 
 }
@@ -1355,12 +1355,12 @@ padding-top: 100px;
 padding-bottom: 100px;
 }
 .container.footer-container {
-    max-width: 1158px;
+max-width: 1158px;
 }
 .footer-container {
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 0;
+justify-content: center;
+flex-wrap: nowrap;
+gap: 0;
 }
 
 .footer-logo {
