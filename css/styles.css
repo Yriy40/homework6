@@ -406,8 +406,8 @@ align-items: center;
 .hero-title {
     color: var(--WHITE, #FFF);
     /* max-width: 496px; */
-    width: 288px
-    ;height: 160px;
+    width: 288px;
+    height: 160px;
     text-align: center;
     font-family: Roboto;
     /* font-size: 56px; */
